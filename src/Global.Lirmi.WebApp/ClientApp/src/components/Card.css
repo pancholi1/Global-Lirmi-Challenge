@@ -1,0 +1,80 @@
+.containerCard,
+.containerValidarCard {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+  background: #ffffff;
+  border: 2px solid #b8b6b6;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.containerValidarCard {
+  background: #6600ff;
+}
+
+.titleCard,
+.titleValidarCard {
+  font-family: "Public Sans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #010202;
+}
+.titleValidarCard {
+  color: white;
+}
+.subtitleCard,
+.subtitleValidarCard {
+  font-family: "Public Sans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #747474;
+}
+.subtitleValidarCard {
+  color: white;
+}
+.containerTitle {
+  cursor: pointer;
+}
+.containerStatusCard,
+.containerTitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.containerStatusCard {
+  padding: 0px 5px;
+}
+.statusSelect {
+  box-sizing: border-box;
+  padding: 4px 12px;
+  gap: 8px;
+  background: #c7f4cb;
+  border-radius: 32px;
+  width: 60%;
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 18px;
+  color: #010202;
+}
+
+select option {
+  background: #eaeaea;
+}
+
+.burgerValidar {
+  fill: red;
+}

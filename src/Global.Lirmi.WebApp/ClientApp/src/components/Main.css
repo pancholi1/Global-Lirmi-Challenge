@@ -1,0 +1,38 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.widthInputMain {
+  width: 100%;
+}
+
+.containerActivity,
+.containerInputsSwitcher {
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px;
+}
+
+.selectMultipleActivity {
+  width: 35%;
+  height: 45px;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+}
+
+.rowInputsContainer {
+  display: flex;
+  margin-top: 16px;
+}
+.burger {
+  cursor: pointer;
+}
+
+.containerInputsSwitcher {
+  gap: 16px;
+}

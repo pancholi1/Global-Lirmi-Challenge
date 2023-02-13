@@ -1,46 +1,43 @@
-import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './NavMenu.css';
-
+import React, { Component } from "react";
+import "./NavMenu.css";
+import goBack from "../assets/icons/goBack.svg";
+import cloud from "../assets/icons/cloud.svg";
+import burger from "../assets/icons/burger.svg";
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
 
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
-      collapsed: true
+      collapsed: true,
     };
   }
 
-  toggleNavbar () {
+  toggleNavbar() {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
     });
   }
 
   render() {
     return (
-      <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light>
-          <NavbarBrand tag={Link} to="/">Lirmi Challenge</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-            <ul className="navbar-nav flex-grow">
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/">Inicio</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/counter">Contador</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/fetch-data">Obtener datos</NavLink>
-              </NavItem>
-            </ul>
-          </Collapse>
-        </Navbar>
+      <header className="headerContainer">
+        <div className="optionsHeader">
+          <div className="goBackHeader">
+            <img src={goBack}></img>
+            <div>Física 3° Primaria</div>
+          </div>
+          <div className="descriptionHeader">
+            <img src={cloud}></img>
+            <div>Todos los cambios guardados</div>
+            <div className="containerBurger">
+              <img src={burger}></img>
+            </div>
+          </div>
+        </div>
+        <div className="titleHeader">Características de los seres vivos</div>
       </header>
     );
   }

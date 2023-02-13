@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.titleSwitch {
+  font-family: "Public Sans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  color: #010202;
+}
+
+.containerSwitch {
+  display: flex;
+  justify-content: space-between;
+}
+.subtitleSwitch {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #000000;
+  margin-top: 4px;
+}
+
+.lineSwitch {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #adadad;
+
+  /* Inside auto layout */
+}
